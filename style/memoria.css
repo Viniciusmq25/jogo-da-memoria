@@ -28,3 +28,30 @@ h1{
   margin: 0;
 }
 
+.grid{
+  display: grid;
+  width: 100%;
+  gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 800px;
+}
+
+.card{
+  aspect-ratio: 1/1.3;
+  width: 100%;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+}
+
+.front{
+  background-color: red;
+}
+
+.back{
+  background-color: blue;
+}
