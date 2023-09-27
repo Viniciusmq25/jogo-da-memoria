@@ -35,5 +35,5 @@ const getNotes = JSON.parse(localStorage.getItem("notes"));
   });
 
 function redirecionar(){
-  window.location.href = "https://jogo-da-memoria-wine-gamma.vercel.app/jogar.html"
+  window.location.href = "jogar.html"
 }

@@ -1,0 +1,30 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: cornflowerblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.novoJogo{
+  background-color: crimson;
+  border: solid 1px aliceblue;
+  border-radius: 3px;
+  color: aliceblue;
+  margin: 3rem;
+  padding: .5rem;
+  text-decoration: none;
+}
+
+.div_memoria{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  margin: 0;
+}
+
