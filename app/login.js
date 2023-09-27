@@ -34,5 +34,5 @@ const getNotes = JSON.parse(localStorage.getItem("notes"));
   });
 
 jogar.addEventListener("click", () =>{
-  window.location.href = "https://jogo-da-memoria-wine-gamma.vercel.app/jogo.html"
+  window.location.href = "https://jogo-da-memoria-wine-gamma.vercel.app/jogar.html"
 })
