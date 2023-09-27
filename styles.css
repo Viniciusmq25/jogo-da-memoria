@@ -46,6 +46,22 @@ h2{
 }
 
 .submit{
+  font-size: 15px;
+  text-transform: uppercase;
+  color: aliceblue;
+  background-color:crimson;
+  border: solid 1px aliceblue;
+  border-radius: 5px;
+  padding: .5rem;
+  margin-bottom: 1rem;
+}
+
+.nome{
+  margin: 2rem 0 0 0 ;
+}
+
+.jogar{
+  text-decoration: none;
   font-size: 20px;
   text-transform: uppercase;
   color: aliceblue;

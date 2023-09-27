@@ -2,6 +2,7 @@ const noteInput = document.getElementById('nick')
 const noteForm = document.getElementById('form');
 const noteSubmit = document.getElementById('submit')
 const notes = document.getElementById("notes");
+const jogar = document.querySelector(".jogar")
 
 let notesStorage = localStorage.getItem("note")
   ? JSON.parse(localStorage.getItem("notes")) 
@@ -11,8 +12,7 @@ noteForm.addEventListener('submit', (e) => {
   e.preventDefault()
   notesStorage.push(noteInput.value);
   localStorage.setItem("notes", JSON.stringify(notesStorage));
-  listBuilder(noteInput.value)
-  noteInput.value = "";
+  listBuilder(noteInput.value);
 
   if(notesStorage.length > 10){
     localStorage.removeItem("notes");
@@ -20,7 +20,6 @@ noteForm.addEventListener('submit', (e) => {
     notesStorage = [];
   }
 
-  redirecionar()
 })
 
 const listBuilder = (text) => {
@@ -30,11 +29,10 @@ const listBuilder = (text) => {
 };
 
 const getNotes = JSON.parse(localStorage.getItem("notes"));
-getNotes.forEach((note) => {
+  getNotes.forEach((note) => {
   listBuilder(note);
-});
+  });
 
-
-function redirecionar(){
-  window.location.href = "https://jogo-da-memoria-wine-gamma.vercel.app/jogo.html";
-}
+jogar.addEventListener("click", () =>{
+  window.location.href = "https://jogo-da-memoria-wine-gamma.vercel.app/jogo.html"
+})
