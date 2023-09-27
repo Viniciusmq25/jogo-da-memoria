@@ -36,5 +36,5 @@ getNotes.forEach((note) => {
 
 
 function redirecionar(){
-  window.location.href = "https://jogo-da-memoria-wine-gamma.vercel.app/jogo.html";
+  window.location.replace = "https://jogo-da-memoria-wine-gamma.vercel.app/jogo.html";
 }
