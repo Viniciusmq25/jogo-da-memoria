@@ -20,6 +20,7 @@ noteForm.addEventListener('submit', (e) => {
     notesStorage = [];
   }
 
+  redirecionar()
 })
 
 const listBuilder = (text) => {
@@ -33,6 +34,6 @@ const getNotes = JSON.parse(localStorage.getItem("notes"));
   listBuilder(note);
   });
 
-jogar.addEventListener("click", () =>{
+function redirecionar(){
   window.location.href = "https://jogo-da-memoria-wine-gamma.vercel.app/jogar.html"
-})
+}
