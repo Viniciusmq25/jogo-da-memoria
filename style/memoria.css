@@ -39,10 +39,9 @@ h1{
 .card{
   aspect-ratio: 1/1.3;
   width: 100%;
-  background-color: black;
   border-radius: 3px;
   position: relative;
-  transition: all 400ms ease;
+  transition: all 200ms ease;
   transform-style: preserve-3d;
 }
 
@@ -54,6 +53,7 @@ h1{
   background-position: center;
   border: solid 2px rgb(25, 0, 255);
   border-radius: 3px;
+  transition: all 400ms ease;
 }
 
 .front{
@@ -65,6 +65,11 @@ h1{
   backface-visibility: hidden;
 }
 
-.card:hover{
+.reveal-card{
   transform: rotateY(180deg);
+}
+
+.disable-card{
+  filter: saturate(0);
+  opacity: 0.5;
 }
