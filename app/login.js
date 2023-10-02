@@ -4,7 +4,7 @@ const notes = document.getElementById("notes");
 const getTime = JSON.parse(localStorage.getItem("time"));
 const getNotes = JSON.parse(localStorage.getItem("notes"));
 
-let dados = getNotes + getTime;
+let dados = `${getNotes} → ${getTime}`;
 
 let notesStorage = localStorage.getItem("note")
   ? JSON.parse(localStorage.getItem("notes")) 
