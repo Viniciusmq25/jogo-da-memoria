@@ -4,8 +4,25 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.notes{
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 20px;
+  padding: .5rem;
+  color: red;
+  text-transform: uppercase;
+  text-align: center;
+  list-style-type: none;
+}
+
+h3{
+  font-size: 30px;
+   text-transform: uppercase;
 }
 
 .container_nickname{
@@ -15,6 +32,7 @@ body{
   align-items: center;
   background-color: coral;
   padding: 2rem 3rem;
+  margin-top: 1rem;
   border-radius: 8px;
   -webkit-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
@@ -56,22 +74,4 @@ h2{
   padding: 1rem 1rem;
   margin: 0;
   width: 200px;
-}
-
-.notes{
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
-  font-size: 30px;
-  border: solid 1px red;
-  padding: .5rem;
-  color: red;
-  text-transform: uppercase;
-  text-align: center;
-  list-style-type: none;
-}
-
-h3{
-   margin-top: 1rem;
-   text-transform: uppercase;
 }

@@ -19,8 +19,12 @@ noteForm.addEventListener('submit', (e) => {
 
 const listBuilder = () => {
   const note = document.createElement("li");
-  note.innerHTML = dados;
   notes.appendChild(note);
+  if (getTime == null){
+    note.innerHTML = 'ninguém jogou ainda'
+  } else{
+    note.innerHTML = dados;
+  }
 };
 
 function redirecionar(){
