@@ -1,8 +1,6 @@
 const noteInput = document.getElementById('nick')
 const noteForm = document.getElementById('form');
-const noteSubmit = document.getElementById('submit')
 const notes = document.getElementById("notes");
-const jogar = document.querySelector(".jogar")
 const getTime = JSON.parse(localStorage.getItem("time"));
 const getNotes = JSON.parse(localStorage.getItem("notes"));
 
@@ -16,7 +14,6 @@ noteForm.addEventListener('submit', (e) => {
   e.preventDefault()
   notesStorage.push(noteInput.value);
   localStorage.setItem("notes", JSON.stringify(notesStorage));
-  listBuilder(noteInput.value);
   redirecionar()
 })
 

@@ -33,7 +33,6 @@ const checkEndGame = () => {
     clearInterval(cronometro)
     notesStorage.push(cronometroElement.textContent);
     localStorage.setItem("time", JSON.stringify(notesStorage));
-    listBuilder(cronometroElement.textContent)
   }
 }
 
