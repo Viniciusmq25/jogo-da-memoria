@@ -32,8 +32,9 @@ h1{
   display: grid;
   width: 100%;
   gap: 15px;
-  grid-template-columns: repeat(4, 1fr);
-  max-width: 800px;
+  grid-template-columns: repeat(8, 1fr);
+  max-width: 70%;
+  margin-bottom: 5rem;
 }
 
 .card{
