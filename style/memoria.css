@@ -28,7 +28,9 @@ body{
 
 h1{
   margin: 0;
-  background-color: bisque;
+  padding: .5rem;
+  background-color: rgba(255, 47, 245, 0.5);
+  border-radius: 5px;
 }
 
 .grid{
