@@ -8,18 +8,27 @@
 
 </head>
 <body>
+  <div class="waterfall-container">
+    <div class="waterfall">
+      <!-- As imagens são colocadas aqui dinamicamente -->
+    </div>
+  </div>
 
-  <h3>Ultimo jogador</h3>
-  <ul class="notes" id="notes"></ul>
+  <div class="menu">
+    <h3>Ultimo jogador</h3>
+    <ul class="notes" id="notes"></ul>
 
-  <form class="container_nickname" id="form">
-    <h2>Jogo da memória do CarecaRL</h2>
-      <label for="nick" class="NickName">NickName</label>
-        <input type="text" name="nick" id="nick" class="input_nick" minlength="1" maxlength="200" required>
-      <button type="submit" id="submit" class="submit">Jogar</button>
-  </form>
+    <form class="container_nickname" id="form">
+      <h2>Jogo da memória da Gabri e do Vini</h2>
+        <label for="nick" class="NickName">NickName</label>
+          <input type="text" name="nick" id="nick" class="input_nick" minlength="1" maxlength="200" required>
+        <button type="submit" id="submit" class="submit">Jogar</button>
+    </form>
+  </div>
 
+  <script src="app/chuvaImg.js"></script>
   <script src="app/login.js"></script>
   <script src="app/main.js"></script>
+
 </body>
 </html>

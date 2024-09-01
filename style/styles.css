@@ -1,11 +1,54 @@
+html{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 body{
-  background-color: bisque;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Esconde as fotos após elas caírem fora da tela */
+  background-image: url('../img/fundo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.waterfall-container {
+  top: -270px;
+  position: relative;
+  width: 100%;
+  height: 2000px;
+  overflow: hidden;
+}
+
+.waterfall img {
+  position: absolute;
+  width: 150px; /* Pode ajustar o tamanho conforme necessário */
+  opacity: 0.8;
+  animation: fall linear infinite; 
+  z-index: 1;
+}
+
+@keyframes fall {
+  0% {
+      top: -150px;
+  }
+  100% {
+      top: 2000px;
+  }
+}
+
+.menu{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 90vh;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .notes{
