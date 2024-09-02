@@ -79,3 +79,40 @@ h1{
   filter: saturate(0);
   opacity: 0.5;
 }
+
+@media (max-width: 768px) {
+  .novoJogo {
+    margin: 2rem 1rem; /* Ajuste a margem para dispositivos menores */
+    padding: .4rem 0.8rem; /* Ajuste o padding para um botão mais responsivo */
+    font-size: 14px; /* Ajuste o tamanho da fonte */
+  }
+
+  h1 {
+    font-size: 20px; /* Ajuste o tamanho da fonte */
+  }
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr); /* Menos colunas para dispositivos menores */
+    max-width: 90%; /* Aumente a largura máxima do grid para preencher melhor a tela */
+    margin-bottom: 3rem; /* Ajuste a margem para dispositivos menores */
+  }
+}
+
+/* Smartphones em modo retrato e dispositivos com largura de até 480px */
+@media (max-width: 480px) {
+  .novoJogo {
+    margin: 1.5rem 0.5rem; /* Ajuste a margem para dispositivos muito pequenos */
+    padding: .3rem 0.6rem; /* Ajuste o padding para um botão mais responsivo */
+    font-size: 12px; /* Ajuste o tamanho da fonte */
+  }
+
+  h1 {
+    font-size: 18px; /* Ajuste o tamanho da fonte */
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* Colunas ainda menores para dispositivos muito pequenos */
+    max-width: 100%; /* A largura máxima do grid se ajusta à tela inteira */
+    margin-bottom: 2rem; /* Ajuste a margem para dispositivos muito pequenos */
+  }
+}

@@ -28,7 +28,7 @@ const listBuilder = () => {
 };
 
 function redirecionar(){
-  window.location.href = "jogar.html"
+  window.location.href = "Jogo.html"
 }
 
 listBuilder()
