@@ -4,6 +4,8 @@ body{
   justify-content: center;
   align-items: center;
   padding: 0;
+  margin: 0;
+  height: 100vh;
   background-image: url('../img/fundo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,10 +13,10 @@ body{
 }
 
 .novoJogo{
-  background-color: crimson;
-  border: solid 1px aliceblue;
+  background-color: rgb(185, 81, 226);
+  border: solid 1px black;
   border-radius: 3px;
-  color: aliceblue;
+  color: black;
   margin: 3rem;
   padding: .5rem;
   text-decoration: none;
@@ -111,7 +113,7 @@ h1{
   }
 
   .grid {
-    grid-template-columns: repeat(2, 1fr); /* Colunas ainda menores para dispositivos muito pequenos */
+    grid-template-columns: repeat(5, 1fr); /* Colunas ainda menores para dispositivos muito pequenos */
     max-width: 100%; /* A largura máxima do grid se ajusta à tela inteira */
     margin-bottom: 2rem; /* Ajuste a margem para dispositivos muito pequenos */
   }
