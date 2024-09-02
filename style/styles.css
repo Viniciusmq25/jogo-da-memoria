@@ -118,3 +118,70 @@ h2{
   margin: 0;
   width: 200px;
 }
+
+@media (max-width: 768px) {
+  .waterfall img {
+    width: 120px; /* Ajuste o tamanho conforme necessário */
+  }
+
+  .menu {
+    top: 40%;
+  }
+
+  h3{
+    font-size: 25px;
+  }
+
+  .NickName, h2{
+    font-size: 20px;
+    color: black;
+    -webkit-text-stroke: 0px black;
+  }
+
+  .notes {
+    font-size: 18px;
+  }
+
+  .container_nickname {
+    padding: 1.5rem 2rem;
+    margin-top: .5rem;
+  }
+
+  .input_nick, .submit {
+    font-size: 18px;
+    padding: .4rem;
+  }
+
+  .submit {
+    width: 180px;
+  }
+}
+
+/* Smartphones em modo retrato e dispositivos com largura de até 480px */
+@media (max-width: 480px) {
+  .waterfall img {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+  }
+
+  .menu {
+    top: 30%;
+  }
+
+  .notes {
+    font-size: 16px;
+  }
+
+  .container_nickname {
+    padding: 1rem 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .input_nick, .submit {
+    font-size: 16px;
+    padding: .3rem;
+  }
+
+  .submit {
+    width: 150px;
+  }
+}
