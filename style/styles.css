@@ -73,7 +73,7 @@ h3{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(124, 10, 168);
+  background-color: rgb(185, 81, 226);
   padding: 2rem 3rem;
   margin-top: 1rem;
   border-radius: 8px;
@@ -111,7 +111,7 @@ h2{
   font-size: 20px;
   text-transform: uppercase;
   color: aliceblue;
-  background-color:crimson;
+  background-color:rgb(141, 2, 255);
   border: solid 1px aliceblue;
   border-radius: 5px;
   padding: 1rem 1rem;
@@ -121,7 +121,7 @@ h2{
 
 @media (max-width: 768px) {
   .waterfall img {
-    width: 120px; /* Ajuste o tamanho conforme necessário */
+    width: 120px;
   }
 
   .menu {
@@ -164,7 +164,7 @@ h2{
   }
 
   .menu {
-    top: 30%;
+    top: 40%;
   }
 
   .notes {
