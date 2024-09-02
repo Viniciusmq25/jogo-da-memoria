@@ -14,6 +14,7 @@ const thumbs = [
   'image (11)',
   'image (12)',
   'image (13)',
+  'image (15)',
 ]
 
 const createElement = (tag, className) => {
@@ -28,8 +29,8 @@ let secondCard = '';
 const checkEndGame = () => {
   const disabledCard = document.querySelectorAll('.disable-card')
 
-  if(disabledCard.length === 26){
-    alert('ganhou ai cuzao!')
+  if(disabledCard.length === 28){
+    alert('ganhou ai MOZAO')
     clearInterval(cronometro)
     notesStorage.push(cronometroElement.textContent);
     localStorage.setItem("time", JSON.stringify(notesStorage));
